@@ -68,6 +68,15 @@ python soft_pc/sender.py
 4. Receiver parses laser packet, connects to sender TCP server, receives payload.
 5. Receiver verifies key hash from TCP against laser key and decrypts message.
 
+## Schematic
+
+![Hardware Schematic](images/schematic.png)
+
+## Demo
+
+YouTube demo:
+[https://www.youtube.com/watch?si=tVLsFwOBp1G15yDe&v=5jl4CARNfto&feature=youtu.be](https://www.youtube.com/watch?si=tVLsFwOBp1G15yDe&v=5jl4CARNfto&feature=youtu.be)
+
 ## Physical Layer Notes
 
 - Laser transmission currently uses Manchester encoding.
