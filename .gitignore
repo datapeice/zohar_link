@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/
+out/
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.a
+*.lib
+*.dll
+*.exe
+
+# CMake and Visual Studio
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.sln
+*.suo
+*.vcxproj.user
+
+# Embedded IDE generated
+stm32_files/**/Debug/
+stm32_files/**/Release/
+stm32_files/**/.settings/
+stm32_files/**/.project
+stm32_files/**/.cproject
