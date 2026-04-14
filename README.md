@@ -2,6 +2,8 @@
 
 Optical + TCP demo project for transferring encrypted data.
 
+![Zohar Link Demo](images/image.png)
+
 The repository contains microcontroller artifacts and a Python desktop prototype that:
 - sends connection metadata over a laser/UART channel,
 - transfers encrypted payload over TCP,
@@ -13,7 +15,8 @@ The repository contains microcontroller artifacts and a Python desktop prototype
 - `stm32_files/` - STM32-side files
 - `atmega328p_files/` - ATmega328P-side files
 - `images/` - project images
-- `schematic.png` - hardware schematic
+- `images/schematic.png` - hardware schematic
+- `images/image.png` - project preview
 
 ## Requirements
 
@@ -64,6 +67,12 @@ python soft_pc/sender.py
 3. Sender prepares encrypted payload and starts TCP server.
 4. Receiver parses laser packet, connects to sender TCP server, receives payload.
 5. Receiver verifies key hash from TCP against laser key and decrypts message.
+
+## Physical Layer Notes
+
+- Laser transmission currently uses Manchester encoding.
+- Current practical transmission speed is 100 baud.
+- The project is still under active development, and the physical/link layer is planned for further optimization and reliability improvements.
 
 ## Important Runtime Notes
 
